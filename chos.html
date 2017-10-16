@@ -111,19 +111,22 @@
 
     <script type="text/javascript">
         //dropDown
-        function dropDown() {
-            var menu = document.getElementById("menu");
-            menu.classList.add('open');
+            function dropDown() {
+            let menu = document.getElementById("menu");
+            if (menu.classList == 'open') {
+                closeMenu();
+            } else {
+                menu.classList.add('open');
+            }
         };
 
         function closeMenu() {
-            var menu = document.getElementById("menu");
+            let menu = document.getElementById("menu");
             menu.classList.remove('open');
         };
 
         //smooth-scroll
         $(document).ready(function() {
-
 
             $('nav a').click(function() {
                 $('body,html').animate({
