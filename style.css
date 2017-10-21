@@ -556,6 +556,9 @@ nav .active {
     }
   }
   @media (min-width:740px) {
+    nav a {
+      font-size: 11px;
+    }
     .grid {
       grid-template-rows: 0.95fr 1fr 0.5fr 1fr 90px;
     }
