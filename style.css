@@ -613,7 +613,7 @@ nav .active {
       margin-top: 2em;
     }
     .testimonials p {
-      margin: auto auto 0 auto;
+      margin: auto auto 0.5em auto;
     }
     .footer {
       font-size: 25px;
