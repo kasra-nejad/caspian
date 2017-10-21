@@ -1,2 +1,3 @@
-# caspian
-rough draft, not I.E safe.
+caspiantile.ca
+Version 1. 
+I.E stable.
