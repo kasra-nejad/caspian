@@ -438,7 +438,7 @@ nav .active {
   /* testimonials */
   .testimonials {
     margin: 0 auto;
-    margin-bottom: 0;
+    margin-bottom: 2em;
     padding: 1em 0.5em 0 0.5em;
     grid-column: 1/13;
     grid-row: 4/5;
@@ -611,7 +611,7 @@ nav .active {
     .testimonials {
       grid-template-rows: 0.5fr repeat(3, 0.2fr);
       grid-row-gap: 2em;
-      margin-bottom: 0;
+      margin-bottom: -2em;
     }
     .testimonials h2 {
       margin-top: 2em;
