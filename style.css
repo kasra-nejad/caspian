@@ -87,6 +87,7 @@ nav .active {
   background-position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
+  background-blend-mode: exclusion;
   color: #e6eeff;
 }
 
