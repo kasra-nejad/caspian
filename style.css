@@ -110,9 +110,9 @@ nav .active {
   top: 10vh;
   width: 90vw;
   margin: 1em auto;
-  font: 1em 'Alegreya SC', 'Merriweather', serif;
+  font: 1em 'Bree Serif', 'Merriweather', serif;
   text-align: center;
-  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;
+  text-shadow: 20px 20px 30px black, 0 0 20px blue, 0 0 25px darkblue;
   line-height: 2.18;
 }
 
@@ -376,10 +376,12 @@ nav .active {
   .home p {
     grid-column: 2;
     grid-row: 2/-1;
-    font: 15px 'Alegreya SC', 'Merriweather', serif;
+    font: 16px 'Bree Serif', 'Merriweather', serif;
     text-align: center;
     margin: -0.5em 0;
     line-height: 2.18;
+    text-shadow: 10px 10px 20px black, 0 0 10px blue, 0 0 15px darkblue;
+
   }
   .grid .an {
     grid-column: 2/3;
