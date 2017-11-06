@@ -112,7 +112,7 @@ nav .active {
   margin: 1em auto;
   font: 1em 'Bree Serif', 'Merriweather', serif;
   text-align: center;
-  text-shadow: 20px 20px 30px black, 0 0 20px blue, 0 0 25px darkblue;
+  text-shadow: 2px 2px 3px black, 0 0 20px blue, 0 0 25px darkblue;
   line-height: 2.18;
 }
 
@@ -240,6 +240,11 @@ nav .active {
   }
   .home p {
     font-size: 1.2em;
+  }
+  @media (max-height:420px) and (orientation : landscape){
+    .home p {
+      font-size: 12px;
+    }
   }
 }
 
@@ -380,8 +385,12 @@ nav .active {
     text-align: center;
     margin: -0.5em 0;
     line-height: 2.18;
-    text-shadow: 10px 10px 20px black, 0 0 10px blue, 0 0 15px darkblue;
-
+    text-shadow: 2px 2px 3px black, 0 0 10px blue, 0 0 15px darkblue;
+  }
+  @media (max-height:420px) and (orientation : landscape) {
+    .home p {
+      font-size: 12px;
+    }
   }
   .grid .an {
     grid-column: 2/3;
@@ -558,71 +567,94 @@ nav .active {
       }
     }
   }
-  @media (min-width:740px) {
-    nav a {
-      font-size: 11px;
-    }
-    .grid {
-      grid-template-rows: 0.95fr 1fr 0.5fr 1fr 90px;
-    }
-    .home {
-      grid-template-rows: 0.53fr 1fr;
-    }
+  @media (min-width:520px) {
     .home h1 {
-      font-size: 5em;
-      margin-top: -0.35em;
-      height: auto;
+      height: 140%;
     }
     .home p {
-      font-size: 1.4em;
+      font-size: 14px;
+      position: relative;
+          }
+    @media (max-height:420px) and (orientation : landscape) {
+      .home p {
+        font-size: 13px;
+        top: -2vh;
+      }
     }
-    .services {
-      grid-template-rows: 0.55fr;
+
+    @media (max-height:350px) and (orientation : landscape) {
+      .home p {
+        font-size: 12px;
+        top: -3vh;
+      }
     }
-    .services h2 {
-      -ms-flex-item-align: auto;
-      margin-top: -1.5em;
-    }
-    .serv {
-      width: 95%;
-      margin: 0 auto;
-      grid-row: 2/-1;
-      grid-column: 1/-1;
-      grid-template-rows: none;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .serv-items {
-      grid-row: 2/-1;
-    }
-    .gallery {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      grid-template-columns: repeat(6, 1fr);
-      grid-row-gap: 5px;
-      grid-template-rows: 1fr;
-      /* margin-top: 50px;*/
-    }
-    .gallery a {
-      margin: auto;
-    }
-    .gallery img {
-      height: 200px;
-      display: block;
-    }
-    .testimonials {
-      grid-template-rows: 0.5fr repeat(3, 0.2fr);
-      grid-row-gap: 2em;
-      margin-bottom: -2em;
-    }
-    .testimonials h2 {
-      margin-top: 2em;
-    }
-    .testimonials p {
-      margin: auto auto 0.5em auto;
-    }
-    .footer {
-      font-size: 25px;
+    @media (min-width:740px) {
+      nav a {
+        font-size: 11px;
+      }
+      .grid {
+        grid-template-rows: 0.95fr 1fr 0.5fr 1fr 90px;
+      }
+      .home {
+        grid-template-rows: 0.53fr 1fr;
+      }
+      .home h1 {
+        font-size: 5em;
+        margin-top: -0.35em;
+        height: auto;
+      }
+      .home p {
+        font-size: 1.4em;
+
+      }
+
+      .services {
+        grid-template-rows: 0.55fr;
+      }
+      .services h2 {
+        -ms-flex-item-align: auto;
+        margin-top: -1.5em;
+      }
+      .serv {
+        width: 95%;
+        margin: 0 auto;
+        grid-row: 2/-1;
+        grid-column: 1/-1;
+        grid-template-rows: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .serv-items {
+        grid-row: 2/-1;
+      }
+      .gallery {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        grid-template-columns: repeat(6, 1fr);
+        grid-row-gap: 5px;
+        grid-template-rows: 1fr;
+        /* margin-top: 50px;*/
+      }
+      .gallery a {
+        margin: auto;
+      }
+      .gallery img {
+        height: 200px;
+        display: block;
+      }
+      .testimonials {
+        grid-template-rows: 0.5fr repeat(3, 0.2fr);
+        grid-row-gap: 2em;
+        margin-bottom: -2em;
+      }
+      .testimonials h2 {
+        margin-top: 2em;
+      }
+      .testimonials p {
+        margin: auto auto 0.5em auto;
+      }
+      .footer {
+        font-size: 25px;
+      }
     }
   }
-}
